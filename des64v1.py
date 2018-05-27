@@ -193,6 +193,8 @@ comp_d_box = [13, 16, 10, 23, 0, 4, 2, 27, 14, 5, 20, 9, 22, 18, 11, 3, 25, 7, 1
               50, 44, 32, 47, 43, 48, 38, 55, 33, 52, 45, 41, 49, 35, 28, 31]
 
 
+
+# transform a string into bit list:
 def tobits(s):
     result = []
     for c in s:
@@ -202,6 +204,7 @@ def tobits(s):
     return result
 
 
+# get string from bit list:
 def frombits(bits):
     chars = []
     for b in range(len(bits) // 8):
